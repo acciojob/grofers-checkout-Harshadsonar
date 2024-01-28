@@ -12,7 +12,7 @@ const getSum = () => {
 	});
 
 	const totalRow = document.createElement("tr");
-	totalRow.innerHTML = `<td>Total</td><td class="prices">$${totalPrice.toFixed(2)}</td>`;
+	totalRow.innerHTML = `<td>Total</td><td class="prices">${totalPrice.toFixed(2)}</td>`;
 
 	const table = document.getElementById("groceryTable");
 	table.appendChild(totalRow);
