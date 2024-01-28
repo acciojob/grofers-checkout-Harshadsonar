@@ -3,7 +3,7 @@ getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
 const getSum = () => {
-  const priceElements = document.querySelectorAll("#groceryTable .prices");
+  const priceElements = document.querySelectorAll("#groceryTable .price");
 
 	let totalPrice = 0;
 	priceElements.forEach((priceElement) => {
@@ -12,7 +12,7 @@ const getSum = () => {
 	});
 
 	const totalRow = document.createElement("tr");
-	totalRow.innerHTML = `<td>Total</td><td class="prices">${totalPrice.toFixed(2)}</td>`;
+	totalRow.innerHTML = `<td>Total</td><td class="price">${totalPrice.toFixed(2)}</td>`;
 
 	const table = document.getElementById("groceryTable");
 	table.appendChild(totalRow);
